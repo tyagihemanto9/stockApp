@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/background_color">
+
+    <!-- Title Text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number Verification"
+        android:textSize="20sp"
+        android:textColor="@color/primary_text"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Phone Number Input -->
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+        android:backgroundTint="@color/accent"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+
+        android:drawablePadding="10dp"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp" />
+
+    <!-- Get OTP Button -->
+    <Button
+        android:id="@+id/getOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get OTP"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/button_color"
+        android:layout_marginBottom="20dp"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:textSize="16sp" />
+
+    <!-- OTP Input (Initially Hidden) -->
+    <EditText
+        android:id="@+id/otpEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:padding="12dp"
+        android:backgroundTint="@color/accent"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        android:background="@drawable/rounded_edittext"
+
+        android:drawablePadding="10dp"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp" />
+
+    <!-- Verify OTP Button (Initially Hidden) -->
+    <Button
+        android:id="@+id/verifyOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/button_color"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:textSize="16sp" />
+</LinearLayout>
+
